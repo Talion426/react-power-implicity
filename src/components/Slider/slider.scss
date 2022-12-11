@@ -1,0 +1,94 @@
+.slider {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    color: #f2f4f7;
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &-title {
+            margin-bottom: 32px;
+
+            font-size: 72px;
+            font-weight: 300;
+            text-align: center;
+
+            @media screen and (max-width: 1024px) {
+                margin-bottom: 20px;
+
+                font-size: 54px;
+            }
+
+            @media screen and (max-width: 767px) {
+                margin-bottom: 15px;
+
+                font-size: 32px;
+            }
+        }
+
+        &-subtitle {
+            margin-bottom: 80px;
+
+            font-size: 18px;
+            font-weight: 300;
+            text-align: center;
+
+            @media screen and (max-width: 1024px) {
+                margin-bottom: 20px;
+
+                font-size: 16px;
+            }
+
+            @media screen and (max-width: 767px) {
+                font-size: 13px;
+            }
+        }
+    }
+    &__actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 65px 0;
+    }
+
+    &__btn {
+        width: 240px;
+        padding: 16px 32px;
+
+        font-size: 18px;
+        font-weight: 400;
+        color: transparent;
+
+        background: linear-gradient(to right, #fc4060, #8061fd);
+        background-clip: text;
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #fc4060, #8061fd);
+        border-image-slice: 1;
+
+        transition: all 0.3s ease-in-out;
+    }
+
+    &__dots {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__dot {
+        width: 16px;
+        height: 16px;
+
+        border: 2px solid rgba(196, 196, 196, 0.16);
+        border-radius: 50%;
+
+        &--active {
+            border-color: white;
+        }
+    }
+}

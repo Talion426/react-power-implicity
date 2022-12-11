@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One:regular);
+@import "./styles/nullstyle";
+
+body {
+    background: linear-gradient(to right, #fc4060, #8061fd) no-repeat;
+    background-size: contain;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1200px;
+    height: 80%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    font-family: "Fjalla One", sans-serif;
+
+    background: linear-gradient(180deg, rgba(43, 34, 21, 0.8) -1.22%, #22282e 101.33%);
+    border-radius: 32px;
+
+    @media (max-width: 1200px) {
+        width: 1024px;
+    }
+    @media screen and (max-width: 1024px) {
+        width: 768px;
+        height: 700px;
+    }
+    @media (max-width: 767px) {
+        width: 320px;
+        height: 500px;
+    }
+}
